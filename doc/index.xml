@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on 辻 大志郎</title>
+    <link>https://d-tsuji.github.io/doc/</link>
+    <description>Recent content in Docs on 辻 大志郎</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    
+	<atom:link href="https://d-tsuji.github.io/doc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://d-tsuji.github.io/doc/mqtt_go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://d-tsuji.github.io/doc/mqtt_go/</guid>
+      <description>MQTT Broker MQTT Brokerはmosquitoを使うことにする。Dockerで立ち上げる。
+&amp;gt; docker run -it -p 1883:1883 -p 9001:9001 eclipse-mosquitto 1577610628: mosquitto version 1.6.8 starting 1577610628: Config loaded from /mosquitto/config/mosquitto.conf. 1577610628: Opening ipv4 listen socket on port 1883. 1577610628: Opening ipv6 listen socket on port 1883. MQTT Subscriberの実装 サンプル実装として go-mqtt/sample のトピックをQOS = 0でsubscribeすることにする。mqtt clientにはpahoを使うのが良さそう。ブリッジアプリとして機能するときはselectしているチャネル経由でsubscribeしたメッセージを後続に渡すのが良いだろう。
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/signal&amp;#34; mqtt &amp;#34;github.com/eclipse/paho.mqtt.golang&amp;#34; ) func main() { msgCh := make(chan mqtt.Message) var f mqtt.MessageHandler = func(client mqtt.</description>
+    </item>
+    
+  </channel>
+</rss>

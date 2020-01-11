@@ -14,11 +14,21 @@ main {
     padding: 25px;
     flex: 1 0 auto;
     max-width: 750px;
+    /* Add by d-tsuji to */
+    font-size: 120%;
+    /* Add by d-tsuji to */
 }
 
 img {
     max-width: 100%;
 }
+
+/* Add by d-tsuji from */
+h2 {
+    padding-bottom: 0.2em;
+    border-bottom:1px solid #eaecef;
+}
+/* Add by d-tsuji to */
 
 /* Homepage */
 
@@ -28,7 +38,7 @@ img {
 
 .intro > h1 {
     color: #212121;
-    font-size: 12vh;
+    font-size: 8vh;
 }
 
 .intro > h2 {
@@ -41,6 +51,24 @@ img {
 .content {
     padding-top: 20px;
 }
+
+/* Add by d-tsuji from */
+.content > h1 {
+    font-weight: bold;
+}
+
+.content > h2 {
+    font-weight: bold;
+}
+
+.content > h3 {
+    font-weight: bold;
+}
+
+.content > h4 {
+    font-weight: bold;
+}
+/* Add by d-tsuji to */
 
 /* Profile picture */
 

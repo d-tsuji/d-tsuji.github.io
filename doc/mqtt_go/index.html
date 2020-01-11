@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        
+        <style>
+
+    html body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #1E90FF;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://d-tsuji.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe%20UI:2000">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/plaintext.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.62.2" />
+        
+
+        
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156067367-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments)};
+              gtag('js', new Date());
+              gtag('config', 'UA-156067367-1');
+            </script>
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#"></a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="../../">Home</a></li>
+                            
+                                <li><a href="../../about/">About</a></li>
+                            
+                                <li><a href="../../docs/">Docs</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/d-tsuji/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/d_tutuz/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.facebook.com/daishiro.tsuji.7/"><i class="fa fa-facebook"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/%E5%A4%A7%E5%BF%97%E9%83%8E-%E8%BE%BB-634530173/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        
+        
+        
+
+    </div>
+
+    <div align="start" class="content"><h3 id="mqtt-broker">MQTT Broker</h3>
+<p>MQTT Brokerはmosquitoを使うことにする。Dockerで立ち上げる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">&gt; docker run -it -p 1883:1883 -p 9001:9001 eclipse-mosquitto
+1577610628: mosquitto version 1.6.8 starting
+1577610628: Config loaded from /mosquitto/config/mosquitto.conf.
+1577610628: Opening ipv4 listen socket on port 1883.
+1577610628: Opening ipv6 listen socket on port 1883.
+</code></pre></div><h3 id="mqtt-subscriberの実装">MQTT Subscriberの実装</h3>
+<p>サンプル実装として <code>go-mqtt/sample</code> のトピックをQOS = 0でsubscribeすることにする。mqtt clientにはpahoを使うのが良さそう。ブリッジアプリとして機能するときはselectしているチャネル経由でsubscribeしたメッセージを後続に渡すのが良いだろう。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;log&#34;</span>
+	<span style="color:#e6db74">&#34;os&#34;</span>
+	<span style="color:#e6db74">&#34;os/signal&#34;</span>
+
+	<span style="color:#a6e22e">mqtt</span> <span style="color:#e6db74">&#34;github.com/eclipse/paho.mqtt.golang&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">msgCh</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Message</span>)
+	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">f</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">MessageHandler</span> = <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">client</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Client</span>, <span style="color:#a6e22e">msg</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Message</span>) {
+		<span style="color:#a6e22e">msgCh</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">msg</span>
+	}
+	<span style="color:#a6e22e">opts</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">NewClientOptions</span>()
+	<span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">AddBroker</span>(<span style="color:#e6db74">&#34;tcp://localhost:1883&#34;</span>)
+	<span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">NewClient</span>(<span style="color:#a6e22e">opts</span>)
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">token</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Connect</span>(); <span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Wait</span>() <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Error</span>() <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalf</span>(<span style="color:#e6db74">&#34;Mqtt error: %s&#34;</span>, <span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Error</span>())
+	}
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">subscribeToken</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#e6db74">&#34;go-mqtt/sample&#34;</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">f</span>); <span style="color:#a6e22e">subscribeToken</span>.<span style="color:#a6e22e">Wait</span>() <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">subscribeToken</span>.<span style="color:#a6e22e">Error</span>() <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">subscribeToken</span>.<span style="color:#a6e22e">Error</span>())
+	}
+
+	<span style="color:#a6e22e">signalCh</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Signal</span>, <span style="color:#ae81ff">1</span>)
+	<span style="color:#a6e22e">signal</span>.<span style="color:#a6e22e">Notify</span>(<span style="color:#a6e22e">signalCh</span>, <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Interrupt</span>)
+
+	<span style="color:#66d9ef">for</span> {
+		<span style="color:#66d9ef">select</span> {
+		<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">m</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">msgCh</span>:
+			<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;topic: %v, payload: %v\n&#34;</span>, <span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Topic</span>(), string(<span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Payload</span>()))
+		<span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">signalCh</span>:
+			<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Interrupt detected.\n&#34;</span>)
+			<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Disconnect</span>(<span style="color:#ae81ff">1000</span>)
+			<span style="color:#66d9ef">return</span>
+		}
+	}
+}
+</code></pre></div><p>テストにpublishする実装。go buildなどをして、上記のgoアプリとは別のターミナルで起動させる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;log&#34;</span>
+
+	<span style="color:#a6e22e">mqtt</span> <span style="color:#e6db74">&#34;github.com/eclipse/paho.mqtt.golang&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">opts</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">NewClientOptions</span>()
+	<span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">AddBroker</span>(<span style="color:#e6db74">&#34;tcp://localhost:1883&#34;</span>)
+	<span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">NewClient</span>(<span style="color:#a6e22e">opts</span>)
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">token</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Connect</span>(); <span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Wait</span>() <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Error</span>() <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalf</span>(<span style="color:#e6db74">&#34;Mqtt error: %s&#34;</span>, <span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Error</span>())
+	}
+
+	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+		<span style="color:#a6e22e">text</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;this is msg #%d!&#34;</span>, <span style="color:#a6e22e">i</span>)
+		<span style="color:#a6e22e">token</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Publish</span>(<span style="color:#e6db74">&#34;go-mqtt/sample&#34;</span>, <span style="color:#ae81ff">0</span>, <span style="color:#66d9ef">false</span>, <span style="color:#a6e22e">text</span>)
+		<span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Wait</span>()
+	}
+
+	<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Disconnect</span>(<span style="color:#ae81ff">250</span>)
+
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Complete publish&#34;</span>)
+}
+</code></pre></div><p>subscriberを起動させたまま、publisherを実行すると以下のようになる。</p>
+<ul>
+<li>MQTT Subscriber が接続したときのMQTT Brokerのログ</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">1577610760: New connection from 172.17.0.1 on port 1883.
+1577610760: New client connected from 172.17.0.1 as auto-0D5C578F-3020-BB4E-DD27-175C728719A3 (p2, c1, k30).
+</code></pre></div><ul>
+<li>MQTT Publisher が接続したときのMQTT Brokerのログ</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">1577610793: New connection from 172.17.0.1 on port 1883.
+1577610793: New client connected from 172.17.0.1 as auto-1CD1DCAB-9437-1182-33EB-21392BCF739C (p2, c1, k30).
+1577610793: Client auto-1CD1DCAB-9437-1182-33EB-21392BCF739C disconnected.
+</code></pre></div><ul>
+<li>MQTT Subscriber</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">go run main.go
+topic: go-mqtt/sample, payload: this is msg #0!
+topic: go-mqtt/sample, payload: this is msg #1!
+topic: go-mqtt/sample, payload: this is msg #2!
+topic: go-mqtt/sample, payload: this is msg #3!
+topic: go-mqtt/sample, payload: this is msg #4!
+</code></pre></div><p>簡易的だけどこんな感じで。</p>
+<h2 id="その他参考">その他参考</h2>
+<ul>
+<li>ドキュメント
+<ul>
+<li><a href="https://godoc.org/github.com/eclipse/paho.mqtt.golang">https://godoc.org/github.com/eclipse/paho.mqtt.golang</a></li>
+</ul>
+</li>
+</ul>
+<p>このあたりの実装は参考になりそう。</p>
+<ul>
+<li><a href="https://github.com/influxdata/telegraf/blob/8b73625492d676107bf5b81cc232ad8f31c2eb1b/plugins/inputs/mqtt_consumer/mqtt_consumer.go">influxdata/telegraf mqtt_consumer.go</a></li>
+</ul>
+</div>
+
+</main>
+
+
+
+
+
+
+</body>
+
+</html>
+

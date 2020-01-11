@@ -16,10 +16,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://d-tsuji.github.io/about/</guid>
-      <description>辻大志郎  英語版  SNSアカウント  GitHub:d-tsuji Twitter:d_tutuz Qiita:tutuz   職歴 Future Architect(2014/10～) バックエンドエンジニア。サーバサイドはGoやJavaを扱うことが多い。インフラは主にAWS。
- AWSを用いたマイクロサービス実行基盤構築(リーダ) ドライバーの業務品質可視化基盤構築(リーダ) ELKを用いたNetFlow可視化基盤構築(リーダ) 大規模システムのバッチ処理の管理するワークフローエンジンの開発(メンバ) Jenkins / Maven を利用したCI環境の構築/運用(リーダ) vSphereを使用したプライベートクラウドの設計/運用(メンバ) AWS/GCPを使用したクラウドの運用(メンバ) Ansible / Terraformを使用した Infrastructure as Code の実現(メンバ)  渋谷区役所(2013/4～2014/09)  税務関連   学歴  横浜市立大学 国際総合科学部(2009/4～2013/3) 神奈川県立湘南高校 (2006/4～2009/3)   OSSプロダクト   ttycopy
+      <description>辻大志郎  英語版  SNSアカウント  GitHub:d-tsuji Twitter:d_tutuz Qiita:tutuz  職歴 Future Architect(2014/10～) バックエンドエンジニア。サーバサイドはGoやJavaを扱うことが多い。インフラは主にAWS。
+ AWSを用いたマイクロサービス実行基盤構築(リーダ) ドライバーの業務品質可視化基盤構築(リーダ) ELKを用いたNetFlow可視化基盤構築(リーダ) 大規模システムのバッチ処理の管理するワークフローエンジンの開発(メンバ) Jenkins / Maven を利用したCI環境の構築/運用(リーダ) vSphereを使用したプライベートクラウドの設計/運用(メンバ) AWS/GCPを使用したクラウドの運用(メンバ) Ansible / Terraformを使用した Infrastructure as Code の実現(メンバ)  渋谷区役所(2013/4～2014/09)  税務関連  学歴  横浜市立大学 国際総合科学部(2009/4～2013/3) 神奈川県立湘南高校 (2006/4～2009/3)  OSSプロダクト   ttycopy
  サーバ上で、他のttyプロセスのターミナルに出力された出力をコピーして表示するツール    Flower
- ワークフロー管理に用いるワークフローエンジン     興味があること  コンピュータサイエンス  OS ファイルシステム 言語処理系 並行・並列プログラミング   数学  数理最適化     登壇  辻大志郎, Golangで並行シミュレーテッドアニーリング, Go Conference Tokyo 2019 Autumn, 2019年10月.</description>
+ ワークフロー管理に用いるワークフローエンジン    興味があること  コンピュータサイエンス  OS ファイルシステム 言語処理系 並行・並列プログラミング   数学  数理最適化    登壇  辻大志郎, Golangで並行シミュレーテッドアニーリング, Go Conference Tokyo 2019 Autumn, 2019年10月.</description>
     </item>
     
     <item>
@@ -28,8 +28,28 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://d-tsuji.github.io/about_en/</guid>
-      <description>Tsuji Daishiro  Japanese version  SNS Account  GitHub:d-tsuji Qiita:tutuz AtCoder(Competitive programming):tutuz   Job career Future Architect(2014/10～) I am a backend engineer. I have mainly worked on the following.
- Development of data analysis platform using distributed DB Construction of IoT platform Improve performance of mission-critical systems Construction / operation of CI environment using Jenkins / Maven Realization of Infrastructure as Code using Ansible Design / operation of private cloud using vSphere  Shibuya Ward Office(2013/4～2014/09)  Tax related work   Educational background  Yokohama City University.</description>
+      <description>Tsuji Daishiro  Japanese version  SNS Account  GitHub:d-tsuji Qiita:tutuz AtCoder(Competitive programming):tutuz  Job career Future Architect(2014/10～) I am a backend engineer. I have mainly worked on the following.
+ Development of data analysis platform using distributed DB Construction of IoT platform Improve performance of mission-critical systems Construction / operation of CI environment using Jenkins / Maven Realization of Infrastructure as Code using Ansible Design / operation of private cloud using vSphere  Shibuya Ward Office(2013/4～2014/09)  Tax related work  Educational background  Yokohama City University.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://d-tsuji.github.io/doc/mqtt_go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://d-tsuji.github.io/doc/mqtt_go/</guid>
+      <description>MQTT Broker MQTT Brokerはmosquitoを使うことにする。Dockerで立ち上げる。
+&amp;gt; docker run -it -p 1883:1883 -p 9001:9001 eclipse-mosquitto 1577610628: mosquitto version 1.6.8 starting 1577610628: Config loaded from /mosquitto/config/mosquitto.conf. 1577610628: Opening ipv4 listen socket on port 1883. 1577610628: Opening ipv6 listen socket on port 1883. MQTT Subscriberの実装 サンプル実装として go-mqtt/sample のトピックをQOS = 0でsubscribeすることにする。mqtt clientにはpahoを使うのが良さそう。ブリッジアプリとして機能するときはselectしているチャネル経由でsubscribeしたメッセージを後続に渡すのが良いだろう。
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/signal&amp;#34; mqtt &amp;#34;github.com/eclipse/paho.mqtt.golang&amp;#34; ) func main() { msgCh := make(chan mqtt.Message) var f mqtt.MessageHandler = func(client mqtt.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://d-tsuji.github.io/docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://d-tsuji.github.io/docs/</guid>
+      <description>Docs Go  mqttをgoで試してみる  </description>
     </item>
     
   </channel>
