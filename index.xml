@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>辻 大志郎</title>
+    <link>https://d-tsuji.github.io/</link>
+    <description>Recent content on 辻 大志郎</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    
+	<atom:link href="https://d-tsuji.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://d-tsuji.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://d-tsuji.github.io/about/</guid>
+      <description>辻大志郎  英語版  SNSアカウント  GitHub:d-tsuji Twitter:d_tutuz Qiita:tutuz   職歴 Future Architect(2014/10～) バックエンドエンジニア。サーバサイドはGoやJavaを扱うことが多い。インフラは主にAWS。
+ AWSを用いたマイクロサービス実行基盤構築(リーダ) ドライバーの業務品質可視化基盤構築(リーダ) ELKを用いたNetFlow可視化基盤構築(リーダ) 大規模システムのバッチ処理の管理するワークフローエンジンの開発(メンバ) Jenkins / Maven を利用したCI環境の構築/運用(リーダ) vSphereを使用したプライベートクラウドの設計/運用(メンバ) AWS/GCPを使用したクラウドの運用(メンバ) Ansible / Terraformを使用した Infrastructure as Code の実現(メンバ)  渋谷区役所(2013/4～2014/09)  税務関連   学歴  横浜市立大学 国際総合科学部(2009/4～2013/3) 神奈川県立湘南高校 (2006/4～2009/3)   OSSプロダクト   ttycopy
+ サーバ上で、他のttyプロセスのターミナルに出力された出力をコピーして表示するツール    Flower
+ ワークフロー管理に用いるワークフローエンジン     興味があること  コンピュータサイエンス  OS ファイルシステム 言語処理系 並行・並列プログラミング   数学  数理最適化     登壇  辻大志郎, Golangで並行シミュレーテッドアニーリング, Go Conference Tokyo 2019 Autumn, 2019年10月.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://d-tsuji.github.io/about_en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://d-tsuji.github.io/about_en/</guid>
+      <description>Tsuji Daishiro  Japanese version  SNS Account  GitHub:d-tsuji Qiita:tutuz AtCoder(Competitive programming):tutuz   Job career Future Architect(2014/10～) I am a backend engineer. I have mainly worked on the following.
+ Development of data analysis platform using distributed DB Construction of IoT platform Improve performance of mission-critical systems Construction / operation of CI environment using Jenkins / Maven Realization of Infrastructure as Code using Ansible Design / operation of private cloud using vSphere  Shibuya Ward Office(2013/4～2014/09)  Tax related work   Educational background  Yokohama City University.</description>
+    </item>
+    
+  </channel>
+</rss>
