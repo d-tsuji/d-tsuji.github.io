@@ -21,7 +21,9 @@
  公式サイト  https://gohugo.io/ https://themes.gohugo.io/minimal/    テーマ テーマはいろいろありますが、シンプルなものがよかったので Minimal にしました。まぁ好き好きですね。
  フォント  Google Fontsから選ぶことができます。一番しっくりきたのが Segoe UI だったのでこのフォントを使うことにしました。   その他の見た目  フォントはboldにしないと少し小さい気がしたので、このあたりは main.css をいじって修正しています。あとは文字の大きさとか100%だと少し小さかったので調整したりと、細々とした修正をしました。面倒ですね。    構築手順 手順は以下を参考にすれば簡単にできました。
 https://gohugo.io/getting-started/quick-start/
-デプロイ ページのホスティングはGitHub Pagesを使っています。以下の手順でOKです。
+サイト内リンク サイト内リンクのやり方が Markdown のときと少し異なっていました。公式ドキュメントにも書いてあるのですが、以下のようにする必要があります。
+https://gohugo.io/functions/ref/
+- [リンク先](https://d-tsuji.github.io/blog/start_hugo/) デプロイ ページのホスティングはGitHub Pagesを使っています。以下の手順でOKです。
 https://gohugo.io/hosting-and-deployment/hosting-on-github/
 ポイントとしては、ブログの本文を修正するリポジトリと実際のブログのリポジトリは別になることです(そうでない設定方法もあります)。ブログ本文はprivateにして公開するブログをpublicにするということも可能です。そうしています。
 GitHub Actionsとの連携 ブログ側の記事を修正/公開したときに、ブログ側の記事が自動的に反映されると嬉しいです。GitHub Actionsを使うことができます。

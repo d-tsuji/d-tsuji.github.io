@@ -176,7 +176,11 @@
 <h2 id="構築手順">構築手順</h2>
 <p>手順は以下を参考にすれば簡単にできました。</p>
 <p><a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a></p>
-<h2 id="デプロイ">デプロイ</h2>
+<h3 id="サイト内リンク">サイト内リンク</h3>
+<p>サイト内リンクのやり方が Markdown のときと少し異なっていました。公式ドキュメントにも書いてあるのですが、以下のようにする必要があります。</p>
+<p><a href="https://gohugo.io/functions/ref/">https://gohugo.io/functions/ref/</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">- [リンク先](https://d-tsuji.github.io/blog/start_hugo/)
+</code></pre></div><h2 id="デプロイ">デプロイ</h2>
 <p>ページのホスティングはGitHub Pagesを使っています。以下の手順でOKです。</p>
 <p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p>
 <p>ポイントとしては、ブログの本文を修正するリポジトリと実際のブログのリポジトリは別になることです(そうでない設定方法もあります)。ブログ本文はprivateにして公開するブログをpublicにするということも可能です。そうしています。</p>
