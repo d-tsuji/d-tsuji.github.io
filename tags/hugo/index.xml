@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 辻 大志郎</title>
+    <link>https://d-tsuji.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on 辻 大志郎</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://d-tsuji.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugoでブログを作りました</title>
+      <link>https://d-tsuji.github.io/blog/start_hugo/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://d-tsuji.github.io/blog/start_hugo/</guid>
+      <description>Hugoでブログを作りました ブログや技術記事は、はてなブログとか Qiita に書くことが多いですが、個人的なブログにまとめていきたいという気持ちもあり Hugo で作ってみました。作ったときの作業メモというかちょっとハマったことや Tips をまとめておきます。
+ 公式サイト  https://gohugo.io/ https://themes.gohugo.io/minimal/    テーマ テーマはいろいろありますが、シンプルなものがよかったので Minimal にしました。まぁ好き好きですね。
+ フォント  Google Fontsから選ぶことができます。一番しっくりきたのが Segoe UI だったのでこのフォントを使うことにしました。   その他の見た目  フォントはboldにしないと少し小さい気がしたので、このあたりは main.css をいじって修正しています。あとは文字の大きさとか100%だと少し小さかったので調整したりと、細々とした修正をしました。面倒ですね。    構築手順 手順は以下を参考にすれば簡単にできました。
+https://gohugo.io/getting-started/quick-start/
+デプロイ ページのホスティングはGitHub Pagesを使っています。以下の手順でOKです。
+https://gohugo.io/hosting-and-deployment/hosting-on-github/
+ポイントとしては、ブログの本文を修正するリポジトリと実際のブログのリポジトリは別になることです(そうでない設定方法もあります)。ブログ本文はprivateにして公開するブログをpublicにするということも可能です。そうしています。
+GitHub Actionsとの連携 ブログ側の記事を修正/公開したときに、ブログ側の記事が自動的に反映されると嬉しいです。GitHub Actionsを使うことができます。
+事前準備 以下を揃えておく必要があります。
+ ブログを執筆するリポジトリ デプロイ先のリポジトリ GitHubのPersonal Access Token  repoの操作が可能な権限を付ける必要があります。 リポジトリのSettings -&amp;gt; Secretsを開き、「Add a new secret」を押して、Nameを「MY_GITHUB_ACCESS_TOKEN」Valueに先程のトークンを設定します。 この設定を入れないと、別のリポジトリにアクセスする権限を持てず、デプロイ時にエラーになります。    ここではデプロイ先のリポジトリは {USER_NAME}/{USER_NAME}.</description>
+    </item>
+    
+  </channel>
+</rss>

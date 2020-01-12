@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hugoでブログを作りました</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #1E90FF;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://d-tsuji.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe%20UI:2000">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/plaintext.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.62.2" />
+        
+
+        
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156067367-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments)};
+              gtag('js', new Date());
+              gtag('config', 'UA-156067367-1');
+            </script>
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Hugoでブログを作りました</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="../../">Home</a></li>
+                            
+                                <li><a href="../../about/">About</a></li>
+                            
+                                <li><a href="../../docs/">Docs</a></li>
+                            
+                                <li><a href="../../blog/">Blog</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/d-tsuji/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/d_tutuz/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.facebook.com/daishiro.tsuji.7/"><i class="fa fa-facebook"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/%E5%A4%A7%E5%BF%97%E9%83%8E-%E8%BE%BB-634530173/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        
+        
+        
+<a href="https://d-tsuji.github.io/tags/hugo"><kbd class="item-tag">hugo</kbd></a>
+
+<a href="https://d-tsuji.github.io/tags/blog"><kbd class="item-tag">blog</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><h1 id="hugoでブログを作りました">Hugoでブログを作りました</h1>
+<p>ブログや技術記事は、はてなブログとか Qiita に書くことが多いですが、個人的なブログにまとめていきたいという気持ちもあり Hugo で作ってみました。作ったときの作業メモというかちょっとハマったことや Tips をまとめておきます。</p>
+<ul>
+<li>公式サイト
+<ul>
+<li><a href="https://gohugo.io/">https://gohugo.io/</a></li>
+<li><a href="https://themes.gohugo.io/minimal/">https://themes.gohugo.io/minimal/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="テーマ">テーマ</h2>
+<p>テーマはいろいろありますが、シンプルなものがよかったので <a href="https://themes.gohugo.io/minimal/">Minimal</a> にしました。まぁ好き好きですね。</p>
+<ul>
+<li>フォント
+<ul>
+<li>Google Fontsから選ぶことができます。一番しっくりきたのが <code>Segoe UI</code> だったのでこのフォントを使うことにしました。</li>
+</ul>
+</li>
+<li>その他の見た目
+<ul>
+<li>フォントはboldにしないと少し小さい気がしたので、このあたりは <code>main.css</code> をいじって修正しています。あとは文字の大きさとか100%だと少し小さかったので調整したりと、細々とした修正をしました。<del>面倒ですね。</del></li>
+</ul>
+</li>
+</ul>
+<h2 id="構築手順">構築手順</h2>
+<p>手順は以下を参考にすれば簡単にできました。</p>
+<p><a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a></p>
+<h2 id="デプロイ">デプロイ</h2>
+<p>ページのホスティングはGitHub Pagesを使っています。以下の手順でOKです。</p>
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p>
+<p>ポイントとしては、ブログの本文を修正するリポジトリと実際のブログのリポジトリは別になることです(そうでない設定方法もあります)。ブログ本文はprivateにして公開するブログをpublicにするということも可能です。そうしています。</p>
+<h3 id="github-actionsとの連携">GitHub Actionsとの連携</h3>
+<p>ブログ側の記事を修正/公開したときに、ブログ側の記事が自動的に反映されると嬉しいです。GitHub Actionsを使うことができます。</p>
+<h4 id="事前準備">事前準備</h4>
+<p>以下を揃えておく必要があります。</p>
+<ul>
+<li><strong>ブログを執筆するリポジトリ</strong></li>
+<li><strong>デプロイ先のリポジトリ</strong></li>
+<li><strong>GitHubのPersonal Access Token</strong>
+<ul>
+<li>repoの操作が可能な権限を付ける必要があります。</li>
+<li>リポジトリのSettings -&gt; Secretsを開き、「Add a new secret」を押して、Nameを「MY_GITHUB_ACCESS_TOKEN」Valueに先程のトークンを設定します。 この設定を入れないと、別のリポジトリにアクセスする権限を持てず、デプロイ時にエラーになります。</li>
+</ul>
+</li>
+</ul>
+<p>ここではデプロイ先のリポジトリは <code>{USER_NAME}/{USER_NAME}.github.io</code> となっていると仮定します。</p>
+<p>ワークフローのスクリプトは以下のようになります。</p>
+<p>.github/workflows/build.yml</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">name: build and deploy
+on:
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: install hugo
+      env:
+        HUGO_VERSION: <span style="color:#ae81ff">0.62</span><span style="color:#ae81ff">.2</span>
+      run: <span style="color:#e6db74">|
+</span><span style="color:#e6db74">       </span><span style="color:#e6db74"> </span><span style="color:#e6db74">wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb</span>
+        sudo dpkg -i hugo_${HUGO_VERSION}_Linux-64bit.deb
+        rm hugo_${HUGO_VERSION}_Linux-64bit.deb
+    - name: setup public repo
+      run: <span style="color:#e6db74">|
+</span><span style="color:#e6db74">         </span><span style="color:#e6db74"> </span><span style="color:#e6db74">git clone --depth 1 https://d-tsuji:${{ secrets.MY_GITHUB_ACCESS_TOKEN }}@github.com/d-tsuji/d-tsuji.github.io.git public</span>
+    - name: Build
+      run: <span style="color:#e6db74">|
+</span><span style="color:#e6db74">       </span><span style="color:#e6db74"> </span><span style="color:#e6db74">git submodule init</span>
+        git submodule update
+        hugo
+    - name: Push
+      run: <span style="color:#e6db74">|
+</span><span style="color:#e6db74">       </span><span style="color:#e6db74"> </span><span style="color:#e6db74">export MSG=&#34;auto rebuilding site&#34;</span>
+        cd public
+        git config --local user.name <span style="color:#e6db74">&#34;d-tsuji&#34;</span>
+        git config --local user.email ${{ secrets.GITHUB_EMAIL }}
+        git add .
+        git commit -m <span style="color:#e6db74">&#34;${MSG}&#34;</span>
+        git push origin master
+</code></pre></div><p>上記のようにすると、ブログ執筆用のmasterブランチにpush/mergeすると自動的に公開用ブログが更新されるようになります。都度 <code>hugo</code> などのコマンドを実行して <code>{USER_NAME}/{USER_NAME}.github.io</code> のリポジトリに push する必要がなくなるので便利です。</p>
+<h2 id="参考">参考</h2>
+<p>GitHub Actionsでのデプロイは以下のサイトを参考にしました。</p>
+<ul>
+<li><a href="https://knsh14.github.io/posts/how-to-automate-deploying-hugo/">HugoのデプロイをGitHub Actionsで行う</a></li>
+</ul>
+</div>
+
+</main>
+
+
+
+
+
+
+</body>
+
+</html>
+
