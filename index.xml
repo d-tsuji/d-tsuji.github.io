@@ -38,7 +38,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://d-tsuji.github.io/docs/</guid>
-      <description>Docs Go 翻訳記事  Effective Go Go database/sql tutorial The Go Blog  Go Slices: usage and internals    </description>
+      <description>Docs Go 記事  Go Note  GoのTipsなど    翻訳記事  Effective Go Go database/sql tutorial The Go Blog  Go Concurrency Patterns: Context Arrays, slices (and strings): The mechanics of &amp;lsquo;append&amp;rsquo; Go Slices: usage and internals    技術書系  reading-books  読書メモです。Git Booksを使ってみたかっただけ&amp;hellip;    </description>
     </item>
     
   </channel>
