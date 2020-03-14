@@ -19,7 +19,8 @@
       <description>辻大志郎 (@tutuz)  英語版  基本情報 フューチャーという会社でバックエンドエンジニアをしています。GoやJavaを扱うことが多いです。2019年にGoに惹かれて、それ以来Goを書いています。インフラはオンプレ上にvSphereで仮想化基盤を構築したり、Terraformを用いてAWS上にインフラ構築したりしています。エンジニアを支えるプロダクトやミドルウェア、ライブラリを作ることに喜びを感じます。
 🌐 SNSアカウント  GitHub: https://github.com/d-tsuji Twitter: https://twitter.com/d_tutuz Qiita: https://qiita.com/tutuz Speakerdeck: https://speakerdeck.com/tutuz  🎫 OSSプロダクト   ttycopy
  他のttyプロセスのターミナルに出力された出力をコピーして表示するツール    Flower
- ワークフロー管理に用いるワークフローエンジン    💡 興味があること  コンピュータサイエンス  OS ファイルシステム 言語処理系 並行・並列プログラミング   数学  数理最適化    👏 登壇  辻大志郎, Golangで並行シミュレーテッドアニーリング, Go Conference Tokyo 2019 Autumn, 2019年10月. 辻大志郎, インライン展開をGoでのぞいてみる, golang.tokyo #28, 2019年12月. 辻大志郎, ワークフローエンジンをGoで作る, Umeda.</description>
+ ワークフロー管理に用いるワークフローエンジン    lightenv
+ 環境変数を便利にマネージメントするライブラリ    💡 興味があること  コンピュータサイエンス  OS ファイルシステム 言語処理系 並行・並列プログラミング   数学  数理最適化    👏 登壇  辻大志郎, Golangで並行シミュレーテッドアニーリング, Go Conference Tokyo 2019 Autumn, 2019年10月. 辻大志郎, インライン展開をGoでのぞいてみる, golang.</description>
     </item>
     
     <item>
