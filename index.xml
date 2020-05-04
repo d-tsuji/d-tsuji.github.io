@@ -17,7 +17,7 @@
       
       <guid>https://d-tsuji.github.io/about/</guid>
       <description>辻大志郎 (@tutuz)  英語版  基本情報 フューチャーという会社でバックエンドエンジニアをしています。GoやJavaを扱うことが多いです。2019年にGoに惹かれて、それ以来Goを書いています。インフラはオンプレ上にvSphereで仮想化基盤を構築したり、Terraformを用いてAWS上にインフラ構築したりしています。エンジニアを支えるプロダクトやミドルウェア、ライブラリを作ることに喜びを感じます。
-🌐 SNSアカウント  GitHub: https://github.com/d-tsuji Twitter: https://twitter.com/d_tutuz Qiita: https://qiita.com/tutuz Speakerdeck: https://speakerdeck.com/tutuz  🎫 OSSプロダクト   ttycopy
+🌐 SNSアカウント  GitHub: https://github.com/d-tsuji Twitter: https://twitter.com/d_tutuz Qiita: https://qiita.com/tutuz  Speakerdeck: https://speakerdeck.com/tutuz  🎫 OSSプロダクト   ttycopy
  他のttyプロセスのターミナルに出力された出力をコピーして表示するツール    Flower
  ワークフロー管理に用いるワークフローエンジン    Qiisync
  Qiitaの記事をCLIから扱うクライアントツール    lightenv
