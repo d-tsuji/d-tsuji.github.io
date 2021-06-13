@@ -16,12 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://d-tsuji.github.io/about/</guid>
-      <description>辻大志郎 (@tutuz)  英語版  基本情報 フューチャーという会社でバックエンドエンジニアをしています。GoやJavaを扱うことが多いです。2019年にGoに惹かれて、それ以来Goを書いています。インフラはオンプレ上にvSphereで仮想化基盤を構築したり、Terraformを用いてAWS上にインフラ構築したりしています。エンジニアを支えるプロダクトやミドルウェア、ライブラリを作ることに喜びを感じます。
-🌐 SNSアカウント  GitHub: https://github.com/d-tsuji Twitter: https://twitter.com/d_tutuz Qiita: https://qiita.com/tutuz  Speakerdeck: https://speakerdeck.com/tutuz  🎫 OSSプロダクト   ttycopy
- 他のttyプロセスのターミナルに出力された出力をコピーして表示するツール    Flower
- ワークフロー管理に用いるワークフローエンジン    Qiisync
- Qiitaの記事をCLIから扱うクライアントツール    lightenv
- 環境変数を便利にマネージメントするライブラリ    💡 興味があること  コンピュータサイエンス  OS ファイルシステム 言語処理系 並行・並列プログラミング   数学  数理最適化    👏 登壇  辻大志郎, Golangで並行シミュレーテッドアニーリング, Go Conference Tokyo 2019 Autumn, 2019年10月.</description>
+      <description>辻大志郎 (@tutuz)  辻大志郎/Daishiro Tsuji  🌐 SNSアカウント  GitHub: https://github.com/d-tsuji Twitter: https://twitter.com/d_tutuz Qiita: https://qiita.com/tutuz Speakerdeck: https://speakerdeck.com/tutuz  👨‍💻 職歴 Future Architect (2014/10～) バックエンドエンジニア。サーバサイドはGoやJava、Pythonを扱うことが多いです。インフラは主にAWSを使っていました。
+  期間 業務内容 役割     2020年5月～ ガス充填基盤のサーバレス制御基盤構築 リードエンジニア   2020年1月～2020年4月 APIプラットフォーム開発 メンバ   2019年9月～2020年1月 AWSを用いたマイクロサービス実行基盤構築 リードエンジニア   2019年11月～2019年12月 IoT分析基盤構築支援 リードエンジニア   2019年4月～2019年8月 バッチ管理ワークフローエンジン開発 メンバ   2018年12月～2019年2月 基幹系刷新基盤要件定義・設計 メンバ   2018年9月～2018年11月 基幹系刷新に向けたネットワークグランドデザイン メンバ   2018年9月～2018年11月 ELKを用いたNetFlow可視化基盤構築 メンバ   2018年1月～2018年3月 BCP基盤構築・検証 メンバ   2017年7月～2019年3月 vSphereを使用したプライベートクラウドの設計/運用 メンバ   2017年7月～2017年12月 Ansible / Terraformを使用した Infrastructure as Code の実現 メンバ   2015年10月～2017年6月 ドライバーの業務品質可視化基盤構築 Ph2 リーダ   2015年7月～2015年8月 Jenkins / Maven を利用したCI環境の構築/運用 メンバ   2015年1月～2015年6月 ドライバーの業務品質可視化基盤構築 Ph1 メンバ    渋谷区役所 (2013/4～2014/09)  税務関連  👨‍🎓 学歴  横浜市立大学 国際総合科学部 (2009/4～2013/3) 神奈川県立湘南高校 (2006/4～2009/3)  🎫 OSSプロダクト   Product 説明     ttycopy 他のttyプロセスのターミナルに出力された出力をコピーして表示するツール   go-mcprotocol GoでPLCと通信するためのクライアントライブラリ   awslambdahandler AWS LambdaのハンドラLinter   Flower ワークフロー管理に用いるワークフローエンジン   Qiisync Qiitaの記事をCLIから扱うクライアントツール    👏 登壇  辻大志郎, Golangで並行シミュレーテッドアニーリング, Go Conference Tokyo 2019 Autumn, 2019年10月.</description>
     </item>
     
     <item>
